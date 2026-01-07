@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Automotive Performance - Professional Design System */
+
+@layer base {
+  :root {
+    --background: 0 0% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 220 35% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 80% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 90%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 0 80% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 88%;
+    --input: 220 15% 88%;
+    --ring: 220 35% 25%;
+
+    --radius: 0.75rem;
+
+    --shadow-soft: 0 4px 20px -4px hsl(220 35% 25% / 0.1);
+    --shadow-medium: 0 8px 30px -6px hsl(220 35% 25% / 0.15);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 220 20% 15%;
+    --sidebar-primary: 220 35% 25%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 80% 55%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 15% 88%;
+    --sidebar-ring: 220 35% 25%;
+  }
+
+  .dark {
+    --background: 220 25% 12%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 30% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 30% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 80% 55%;
+    --primary-foreground: 220 25% 12%;
+
+    --secondary: 220 35% 25%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 30%;
+    --muted-foreground: 220 10% 65%;
+
+    --accent: 0 80% 55%;
+    --accent-foreground: 220 25% 12%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 20% 25%;
+    --input: 220 20% 25%;
+    --ring: 0 80% 55%;
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 80% 55%;
+    --sidebar-primary-foreground: 220 25% 12%;
+    --sidebar-accent: 220 35% 25%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 0 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
